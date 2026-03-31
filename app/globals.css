@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+@theme {
+  --color-surface: #f9f9f9;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #f2f4f4;
+  --color-surface-container: #ebeeef;
+  --color-surface-container-high: #e4e9ea;
+  --color-surface-container-highest: #dde4e5;
+  --color-primary: #5f5e60;
+  --color-primary-dim: #535254;
+  --color-primary-container: #e5e1e4;
+  --color-secondary-container: #e4e1e6;
+  --color-on-primary: #faf7f9;
+  --color-on-surface: #2d3435;
+  --color-on-surface-variant: #596061;
+  --color-outline-variant: #acb3b4;
+
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-headline: var(--font-manrope), ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer utilities {
+  .editorial-shadow {
+    box-shadow: 0 20px 40px rgba(45, 52, 53, 0.06);
+  }
+  .glass-header {
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(12px);
+  }
+  .tool-card-shadow {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+body {
+  background-color: var(--color-surface);
+  color: var(--color-on-surface);
+}
